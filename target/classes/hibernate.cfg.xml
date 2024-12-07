@@ -1,0 +1,27 @@
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC Database connection settings -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/labexam</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Hemanth@1105</property>
+
+        <!-- JDBC connection pool settings -->
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property>
+
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="hibernate.current_session_context_class">thread</property>
+
+        <!-- Hibernate's automatic schema generation -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Enable Hibernate's SQL logging -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Enable second-level cache (if needed) -->
+        <property name="hibernate.cache.use_second_level_cache">false</property>
+    </session-factory>
+</hibernate-configuration>
